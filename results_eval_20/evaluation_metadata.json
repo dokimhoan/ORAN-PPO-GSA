@@ -1,0 +1,89 @@
+{
+  "started_utc": "2026-09-26T20:12:45.119785+00:00",
+  "num_runs": 50,
+  "seed_start": 1000,
+  "configs": [
+    [
+      20,
+      30,
+      5,
+      3,
+      3
+    ],
+    [
+      30,
+      135,
+      7,
+      5,
+      5
+    ],
+    [
+      40,
+      135,
+      7,
+      5,
+      5
+    ],
+    [
+      50,
+      135,
+      7,
+      5,
+      5
+    ]
+  ],
+  "methods": [
+    "BLO",
+    "PPO-GSA",
+    "PPO-MLP",
+    "Nearest-RU",
+    "RoundRobin",
+    "Random-RU"
+  ],
+  "device": "cuda",
+  "python": "3.14.3",
+  "torch": "2.10.0+cu128",
+  "cpu_count": 32,
+  "mosek_threads": 4,
+  "mip_time_limit_s": 120.0,
+  "mip_relative_gap": 0.05,
+  "max_attempts_per_config": 500,
+  "ppo_deterministic": true,
+  "precise_ppo_timing": false,
+  "ppo_gsa_checkpoint": "C:\\Users\\user0\\Hoan's Project\\Optimization_Resource\\PPO_GSA_ILP\\results_train_10\\PPO_GSA_MLP\\PPOGSA_best.pt",
+  "ppo_mlp_checkpoint": "C:\\Users\\user0\\Hoan's Project\\Optimization_Resource\\PPO_GSA_ILP\\results_train_10\\PPO_MLP\\PPOMLP_best.pt",
+  "ppo_gsa_metadata": {
+    "episodes": 49001,
+    "seed": 100000,
+    "total_steps": 1598464,
+    "validation": {
+      "episode": 49001,
+      "mean_reward": 842.1585851850505,
+      "std_reward": 199.63612126738192
+    },
+    "ue_range": [
+      20,
+      50
+    ],
+    "ue_size_sampling": "transition_balanced"
+  },
+  "ppo_mlp_metadata": {
+    "episodes": 11005,
+    "seed": 100000,
+    "total_steps": 359808,
+    "validation": {
+      "episode": 11005,
+      "mean_reward": 720.4958486716773,
+      "std_reward": 159.19444742549774
+    },
+    "ue_range": [
+      20,
+      50
+    ],
+    "ue_size_sampling": "transition_balanced"
+  },
+  "finished_utc": "2026-09-27T05:04:13.226397+00:00",
+  "elapsed_s": 31888.106612,
+  "raw_results": "C:\\Users\\user0\\Hoan's Project\\Optimization_Resource\\PPO_GSA_ILP\\results_eval_20\\evaluation_runs.csv",
+  "summary": "C:\\Users\\user0\\Hoan's Project\\Optimization_Resource\\PPO_GSA_ILP\\results_eval_20\\evaluation_summary.csv"
+}
